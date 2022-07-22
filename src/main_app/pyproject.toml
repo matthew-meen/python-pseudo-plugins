@@ -1,0 +1,16 @@
+
+[tool.poetry]
+name = "main_app"
+version = "0.0.0"
+description = "example application to show pseudo-plugin functionality"
+authors = ["Matthew Meen"]
+packages = [
+    { include = "../main_app" },
+]
+
+[tool.poetry.dev-dependencies]
+tox = "3.25.1"
+
+[build-system]
+requires = ["poetry_core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
